@@ -1,1 +1,5 @@
-alert("Ce site contient encore beaucoup de bug graphique alors n'hesite pas à le signaler. Thank you !");
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", () => {
+    loader.classList.add("fondu-out");
+})
