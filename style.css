@@ -150,4 +150,7 @@ form p {
     }
 }
 
-/* last update */
+::selection {
+    background-color: #00ffff44;
+}
+
