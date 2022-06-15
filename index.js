@@ -1,1 +1,1 @@
-hello
+alert("Ce site contient encore beaucoup de bug graphique alors n'hesite pas à le signaler. Thank you !");
