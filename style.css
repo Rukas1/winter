@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: greenyellow 1px solid; */
 }
 
 :root {
@@ -11,11 +12,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #131416;
-    display: flex;
     height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 a.profile {
@@ -41,6 +47,8 @@ a.modalButton {
     visibility: hidden;
     opacity: 0;
     position: absolute;
+    /* height: 100vh;
+    width: 100%; */
     top: 0;
     bottom: 0;
     right: 0;
@@ -58,12 +66,15 @@ a.modalButton {
 }
 
 .modalContent {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     background-color: #fff;
     width: 600px;
     max-width: 90%;
     border-radius: 15px;
     padding: 1.5rem 1.5rem;
-    position: relative;
 }
 
 a.modalClose {
@@ -119,7 +130,6 @@ form p {
 .img {
     width: 100%;
     height: 300px;
-    max-width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -131,3 +141,16 @@ form p {
         font-size: 12px;
     }
 }
+
+@media(max-height: 700px) {
+    .img {
+        height: 200px;
+    }
+}
+
+@media(max-height: 500px) {
+    .img {
+        height: 150px;
+    }
+}
+
